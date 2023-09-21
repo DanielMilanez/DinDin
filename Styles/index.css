@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #00d768;
+  }
+
+body{
+    overflow-x: hidden;
+    font-family: 'Sora';
+    background-color: #ffffff;
+    color: #333;
+    overflow: hidden;
+    
+}
+.head{
+    text-align: center;
+    font-size: small;
+    font-family: "Sora";
+    background-color: var(--primary-color);
+    font-size: 12px;
+
+    width:100%;
+    padding-bottom: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+.dindinIcon{
+    width: 2%;
+}
+
+.imageNotebook{
+  width: 55%;
+}
+
+.titulo {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  text-align: center;
+}
+
+.btn{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: .5s;
+  overflow: hidden;
+  
+}
+.btn:hover{
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: #172041
+}
+.btn span{
+  position: absolute;
+  display: flex;
+}
+.btn span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg,transparent, var(--primary-color));    
+  animation: btn1 1s linear infinite;
+}
+@keyframes btn1{
+  0%{
+      left: -100%;
+  }
+  50%,
+  100%{
+      left: 100%;
+  }
+}
+
+.btn span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent, var(--primary-color)); 
+  animation: btn2 1s linear infinite;   
+  animation-delay: .20s;
+}
+@keyframes btn2{
+  0%{
+      top:-100%;
+  }
+  50%,
+  100%{
+      top: 100%;
+  }
+}
+.btn span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg,transparent, var(--primary-color)); 
+  animation: btn3 1s linear infinite;  
+  animation-delay: .45s;
+}
+@keyframes btn3{
+  0%{
+      right: -100%;
+  }
+  50%, 100%{
+      right: 100%;
+  }
+}
+
+.btn span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent, var(--primary-color)); 
+  animation: btn4 1s linear infinite;
+  animation-delay: .70s; 
+}
+@keyframes btn4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+}
