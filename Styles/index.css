@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #00d768;
+    --secundary-color: rgb(9, 12, 14);
+  }
+
+body{
+    overflow-x: hidden;
+    font-family: 'Sora';
+    background-color: #ffffff;
+    color: var(--primary-color);
+    overflow: hidden;
+    
+}
+
+.img{
+  width: 2.2%;
+  max-width: 10%; 
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(9, 12, 14,.9); 
+  backdrop-filter: blur(3px);
+  z-index: 1; 
+}
+
+.imageNotebook{
+  width: 100%;
+  z-index: 0;
+}
+
+/* .titulo */
+.titulo {
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.especialCaractere{
+  color: var(--primary-color);
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: .5s;
+  overflow: hidden;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
+}
+.btn:hover {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: #091027;
+}
+

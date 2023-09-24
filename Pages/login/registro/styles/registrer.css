@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #00d768; /*#0e0c0a */
+  --secondary-color: #090c0e;
+  --footer-color: #020201;
+  --text-color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Sora";
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: default;
+}
+.head {
+  text-align: center;
+  background-color: var(--primary-color);
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.dindinIcon {
+  width: 10%;
+}
+
+.Register {
+  width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+}
+
+.Register h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.Register .Box-User {
+  position: relative;
+}
+
+.Box-User input {
+  width: 100%;
+  padding: 10px 0;
+  outline: none;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.Register .Box-User label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.Register .Box-User input:focus ~ label,
+.Register .Box-User input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 12px;
+
+}
+
+.Register .links {
+  margin-top: -30px;
+  margin-bottom: 0;
+}
+
+.login {
+  font-size: 12px;
+  color: var(--primary-color);
+  float: right;
+}
+
+.Register .btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.Register .btn:hover {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: var(--secondary-color);
+}
+
+.Register .btn span {
+  position: absolute;
+  display: flex;
+}
+
+.btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary-color));
+  animation: btn1 1s linear infinite;
+}
+@keyframes btn1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.Register .btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary-color));
+  animation: btn1 1s linear infinite;
+}
+
+.btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--primary-color));
+  animation: btn2 1s linear infinite;
+  animation-delay: 0.2s;
+}
+@keyframes btn2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, var(--primary-color));
+  animation: btn3 1s linear infinite;
+  animation-delay: 0.45s;
+}
+@keyframes btn3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--primary-color));
+  animation: btn4 1s linear infinite;
+  animation-delay: 0.7s;
+}
+@keyframes btn4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.error {
+  display: none;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+
+input:invalid + label + .error {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .dindinIcon {
+    width: 20%;
+    height: auto;
+  }
+}
+
+.descricao {
+  text-align: center;
+  padding-top: 5%;
+  color: var(--text-color);
+}
+.textoDescricao {
+  box-shadow: 0px 4px 6px #000000e6;
+  width: 45%;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.especialCaractere{
+  color: rgb(255, 98, 0);
+}

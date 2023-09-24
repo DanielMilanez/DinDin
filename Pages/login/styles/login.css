@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #00d768; /*#0e0c0a */
+  --secondary-color: #090c0e;
+  --footer-color: #020201;
+  --text-color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Sora";
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: default;
+  min-height: 100vh;
+}
+.head {
+  text-align: center;
+  background-color: var(--primary-color);
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.dindinIcon {
+  width: 10%;
+}
+
+.Login{
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 0 auto;
+    
+  }
+  .Login h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  .Login .Box-User{
+    position: relative;
+  }
+  .Login .Box-User input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .Login .Box-User label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .Login .Box-User input:focus~label,
+  .Login .Box-User input:valid~label{
+    top: -20px;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 12px;
+  }
+  
+  .links{
+    margin-top: -30px;
+    margin-bottom: 0;
+  }
+  .registro{
+    font-size: 12px;
+    color: var(--primary-color);
+    float: right;
+  }
+  .btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .5s;
+    overflow: hidden;
+  }
+  .btn:hover{
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: #000000
+  }
+  .btn span{
+    position: absolute;
+    display: flex;
+  }
+  .btn span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg,transparent, var(--primary-color));    
+    animation: btn1 1s linear infinite;
+  }
+  @keyframes btn1{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+  }
+  
+  .btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, var(--primary-color)); 
+    animation: btn2 1s linear infinite;   
+    animation-delay: .20s;
+  }
+  @keyframes btn2{
+    0%{
+        top:-100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+  }
+  .btn span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg,transparent, var(--primary-color)); 
+    animation: btn3 1s linear infinite;  
+    animation-delay: .45s;
+  }
+  @keyframes btn3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+  }
+  
+  .btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, var(--primary-color)); 
+    animation: btn4 1s linear infinite;
+    animation-delay: .70s; 
+  }
+  @keyframes btn4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+  }
+
+  .error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+
+input:invalid + label + .error {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .dindinIcon {
+      width: 20%;
+      height: auto;
+    }
+  }
+  
+  .help{
+      padding-left: 49%;
+  }
+  .linkSuporte{
+      text-decoration: none;
+      color: var(--primary-color);
+  }
+  .linkSuporte:hover{
+      color: #08961b;
+      text-decoration: underline;
+  }
+
+.especialCaractere{
+  color: rgb(255, 98, 0);
+}
+
+.errormessage {
+  color: #ff0000; 
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Inicialmente, a mensagem de erro estará oculta */
+}
+
+.input-error {
+  border: 2px solid #ff0000; /* Borda vermelha para indicar erro */
+}
