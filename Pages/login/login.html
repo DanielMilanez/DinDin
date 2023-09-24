@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <script defer src="assets/Error.js"></script>
+  </head>
+  <body>
+    <div class="head">
+      <img src="styles/DinDinLogo.png" alt="MoneyIcon.png" class="dindinIcon" />
+    </div>
+
+    <form class="Login">
+      <h2>Login</h2>
+      <div class="Box-User">
+        <input type="text" autocomplete="off" name="username" required />
+        <label>E-mail<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+      <div class="Box-User">
+        <input type="password" autocomplete="off" name="password" required />
+        <label>Senha<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+      <script> // Codigo para fazer o asteristico desaparecer quando algum item input estiver sobre foco.
+        document.addEventListener("DOMContentLoaded", function () {
+          const inputs = document.querySelectorAll(".Box-User input");
+
+          inputs.forEach(function (input) {
+            const especialCaractere =
+              input.nextElementSibling.querySelector(".especialCaractere");
+
+            input.addEventListener("focus", function () {
+              especialCaractere.style.visibility = "hidden";
+            });
+
+            input.addEventListener("blur", function () {
+              especialCaractere.style.visibility = "visible";
+            });
+          });
+        });
+      </script>
+      <a href="#" class="btn" onclick="validateForm(event)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Entrar
+      </a>
+
+      <div class="links">
+        <a href="registro/registrer.html" class="registro">Não tem login?</a>
+      </div>
+    </form>
+  </body>
+</html>

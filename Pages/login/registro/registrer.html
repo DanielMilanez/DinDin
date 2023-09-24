@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles/registrer.css" />
+    <script defer src="assets/Error.js"></script>
+    <script defer src="assets/Redirect.js"></script>
+    <script defer src="assets/IdentadorCPF.js"></script>
+    <script defer src="assets/Caractere.js"></script>
+  </head>
+  <body>
+    <div class="head">
+      <img src="styles/DinDinLogo.png" alt="MoneyIcon.png" class="dindinIcon" />
+    </div>
+    <form class="Register">
+      <h2>Registro</h2>
+      <div class="Box-User">
+        <input type="text" autocomplete="off" name="username" required />
+        <label>Usuário<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+      <div class="Box-User">
+        <input type="text" name="email" autocomplete="off" required />
+        <label>E-Mail<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+      <div class="Box-User">
+        <input
+          type="text"
+          autocomplete="off"
+          name="cpf"
+          maxlength="14"
+          required
+        />
+        <label id="CPF">CPF<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+      <div class="Box-User">
+        <input
+          type="password"
+          autocomplete="off"
+          name="confirmPassword"
+          required
+        />
+        <label>Senha<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+      <div class="Box-User">
+        <input type="password" name="confirmPassword" required />
+        <label>Confirmar Senha<a class="especialCaractere">*</a></label>
+        <span class="error">Por favor, preencha este campo.</span>
+      </div>
+
+<script>
+
+  </script>  
+      <a href="#" class="btn" onclick="validateForm(event)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Registrar
+      </a>
+
+      <div class="links">
+        <a href="#" class="login" onclick="redirectToNovaPagina()"
+          >Já tem login?</a
+        >
+      </div>
+    </form>
+
+    <div class="descricao">
+      <p class="textoDescricao">
+        Não se preocupe, usamos criptografia de ponta para proteger seus dados
+        pessoais!
+      </p>
+    </div>
+  </body>
+</html>

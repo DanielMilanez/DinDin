@@ -33,16 +33,3 @@ body{
 .dindinIcon{
     width: 2%;
 }
-
-body::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background-color: #08964d;
-  }
-  
