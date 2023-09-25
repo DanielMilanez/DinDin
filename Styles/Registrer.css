@@ -226,7 +226,7 @@ input:invalid + label + .error {
 
 .descricao {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 2%;
   color: var(--text-color);
 }
 .textoDescricao {
@@ -238,4 +238,15 @@ input:invalid + label + .error {
 
 .especialCaractere{
   color: rgb(255, 98, 0);
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00d768;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #08964d;
 }
