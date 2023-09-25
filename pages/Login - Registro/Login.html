@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/login.css" />
-    <script defer src="assets/Error.js"></script>
+    <link rel="stylesheet" href="../../styles/Login.css" />
+    <script defer src="../../assets/Error.js"></script>
+    <script defer src="../../assets/ConfigAsterisctico.js"></script>
   </head>
   <body>
     <div class="head">
-      <img src="styles/DinDinLogo.png" alt="MoneyIcon.png" class="dindinIcon" />
+      <img src="../../images/DinDinLogo.png" alt="MoneyIcon.png" class="dindinIcon" />
     </div>
 
     <form class="Login">
@@ -24,24 +25,6 @@
         <label>Senha<a class="especialCaractere">*</a></label>
         <span class="error">Por favor, preencha este campo.</span>
       </div>
-      <script> // Codigo para fazer o asteristico desaparecer quando algum item input estiver sobre foco.
-        document.addEventListener("DOMContentLoaded", function () {
-          const inputs = document.querySelectorAll(".Box-User input");
-
-          inputs.forEach(function (input) {
-            const especialCaractere =
-              input.nextElementSibling.querySelector(".especialCaractere");
-
-            input.addEventListener("focus", function () {
-              especialCaractere.style.visibility = "hidden";
-            });
-
-            input.addEventListener("blur", function () {
-              especialCaractere.style.visibility = "visible";
-            });
-          });
-        });
-      </script>
       <a href="#" class="btn" onclick="validateForm(event)">
         <span></span>
         <span></span>
@@ -51,7 +34,7 @@
       </a>
 
       <div class="links">
-        <a href="registro/registrer.html" class="registro">Não tem login?</a>
+        <a href="Registrer.html" class="registro">Não tem login?</a>
       </div>
     </form>
   </body>
