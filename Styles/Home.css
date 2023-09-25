@@ -11,6 +11,7 @@
   --secondary-color: #090c0e;
   --footer-color: #020201;
   --text-color: #fff;
+  --shadow-color: #08961b;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
     color: var(--primary-color);
 }
 .logon:hover{
-    color: #08961b;
+    color: var(--shadow-color);
     text-decoration: underline;
 }
 
@@ -114,7 +115,7 @@ body {
 }
 .crieumaconta:hover{
     text-decoration:underline;
-    color: #08961b;
+    color: var(--shadow-color);
 }
 
 
@@ -167,7 +168,7 @@ body {
 }
 
 .ServicosTitulo {
-    color: #00d768;
+    color: var(--primary-color);
     padding-bottom: 3%;
 }
 
@@ -213,7 +214,7 @@ body {
 }
 
 .downloadBtn:hover {
-  color: #08961b;
+  color: var(--shadow-color);
 }
 
 body::-webkit-scrollbar {
@@ -265,7 +266,7 @@ footer {
     color: var(--primary-color);
 }
 .linkSuporte:hover{
-    color: #08961b;
+    color: var(--shadow-color);
     text-decoration: underline;
 }
 
@@ -293,4 +294,8 @@ footer {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
+}
+.Link:hover{
+  text-decoration: underline;
+  color: var(--shadow-color);
 }
