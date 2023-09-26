@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #00d768;
+  /*#0e0c0a */
+  --secondary-color: #090c0e;
+  --footer-color: #020201;
+  --text-color: #fff;
+  --shadow-color: #08961b;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Sora";
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: default;
+  overflow: hidden;
+}
+
+.head {
+  text-align: center;
+  background-color: var(--primary-color);
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.dindinIcon {
+  width: 10%;
+  height: auto;
+}
+.botao-voltar {
+  position: absolute;
+  left: 10px; /* Define a distância do canto esquerdo */
+  top: 10px; /* Define a distância do topo */
+  width: 25px; /* Define a largura desejada */
+  height: auto; /* A altura se ajustará automaticamente para manter a proporção */
+  cursor: pointer;
+}
+
+
+@media (max-width: 1300px) {
+  .dindinIcon {
+    width: 20%;
+    height: auto;
+  }
+  .circle-large, .circle-small, .image {
+    display: none;
+  }
+}
+
+.menu {
+  padding-bottom: 3%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+
+.Book {
+  background-color: var(--primary-color);
+  width: 95px;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0px 4px 6px #000000e6;
+}
+.Book:hover {
+  transform: translateY(-10px);
+}
+
+.texto{
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 3%;
+  position: relative;
+  z-index: 2;
+}
+
+/*Images*/
+.circle-large {
+  width: 500px;
+  height: 500px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  margin-top: -20%; /* Metade da altura */
+  margin-left: -54%; /* Metade da largura */
+  animation: slideIn 1s forwards;
+}
+
+.circle-small {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px; /* Metade da altura */
+  margin-left: -30%; /* Metade da largura */
+  animation: orbitAnimation 10s linear infinite; 
+}
+
+.image {
+  height: auto; /* Para manter a proporção original da imagem */
+  width: 40%; /* Para preencher o contêiner */
+  position: relative;
+  z-index: 1;
+  margin-top: -190px;
+  margin-left: -3%;
+  animation: slideIn .5s forwards; /* 1 segundo de duração */
+}
+
+
+@keyframes orbitAnimation {
+  0% {
+    transform: rotate(0deg) translateX(-200px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-360deg) translateX(-200px) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes continuousSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
