@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #00d768;
+    --secondary-color: #090c0e;
+    --footer-color: #020201;
+    --text-color: #fff;
+    --shadow-color: #08961b;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    cursor: default;
+}
+
+.head {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dindinIcon {
+    width: 10%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.services {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    margin: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    width: 30%;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 6px var(--shadow-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px var(--shadow-color);
+}
+
+.menu img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+.menu img:hover, .benefitIcon:hover {
+    transform: scale(1.1);
+}
+
+.menu h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu p {
+    font-size: 16px;
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #08964d;
+}
+
+.benefits {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+.benefitIcon {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
