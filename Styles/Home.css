@@ -278,6 +278,30 @@ footer {
     width: 20%;
     height: auto;
   }
+
+  .slideshow-container {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: var(--text-color);
+    height: 410px;
+    overflow: hidden;
+}
+
+  footer {
+    background-color: var(--footer-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+  }
+  .help{
+    padding-left: 5%;
+    width: 100%;
+}
 }
 
 .anuncio{
