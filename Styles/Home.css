@@ -7,7 +7,8 @@
 }
 
 :root {
-  --primary-color: #00d768; /*#0e0c0a */
+  --primary-color: #00d768;
+  /*#0e0c0a */
   --secondary-color: #090c0e;
   --footer-color: #020201;
   --text-color: #fff;
@@ -21,6 +22,7 @@ body {
   color: var(--primary-color);
   cursor: default;
 }
+
 .head {
   text-align: center;
   background-color: var(--primary-color);
@@ -30,19 +32,21 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .dindinIcon {
   width: 10%;
   height: auto;
 }
 
 .logon {
-    text-align: center;
-    text-decoration: none;
-    color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
 }
-.logon:hover{
-    color: var(--shadow-color);
-    text-decoration: underline;
+
+.logon:hover {
+  color: var(--shadow-color);
+  text-decoration: underline;
 }
 
 
@@ -65,37 +69,37 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(9, 12, 14,.9); 
+  background-color: rgb(9, 12, 14, .9);
   backdrop-filter: blur(3px);
-  z-index: 5; 
+  z-index: 5;
   opacity: 0;
   display: none;
   transition: all ease .5s;
 }
 
-.menu-lines{
-  left: 10px; 
-  top: 10px; 
-  width: 25px; 
+.menu-lines {
+  left: 10px;
+  top: 10px;
+  width: 25px;
   position: absolute;
   z-index: 999;
   width: 35px;
   height: 35px;
 }
 
-.menu-faketrigger{
+.menu-faketrigger {
   position: absolute;
-  left: 10px; 
-  top: 10px; 
-  width: 25px; 
+  left: 10px;
+  top: 10px;
+  width: 25px;
   z-index: 1000;
-  width: 35px;  
+  width: 35px;
   height: 35px;
   opacity: 0;
   cursor: pointer;
 }
 
-.menu-lines span{
+.menu-lines span {
   display: block;
   width: 35px;
   height: 2px;
@@ -104,30 +108,32 @@ body {
   border-radius: 2px;
   transition: all ease .2s;
 }
+
 .disable-scroll {
   overflow: hidden;
 }
 
 
-.menu-faketrigger:checked ~ .background-layer{
+.menu-faketrigger:checked~.background-layer {
   opacity: 1;
   display: block;
 }
 
-.menu-faketrigger:checked ~ .menu-lines span{
+.menu-faketrigger:checked~.menu-lines span {
   background-color: var(--text-color);
 }
 
-.menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+.menu-faketrigger:checked~.menu-lines span:nth-child(1) {
   transform-origin: 0% 0%;
   transform: rotate(45deg) scaleX(1);
-  
+
 }
-.menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+
+.menu-faketrigger:checked~.menu-lines span:nth-child(2) {
   opacity: 0;
 }
 
-.menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+.menu-faketrigger:checked~.menu-lines span:nth-child(3) {
   transform-origin: 0% 100%;
   transform: rotate(-45deg) scaleX(1);
 }
@@ -139,7 +145,7 @@ body {
   top: 0;
   width: 300px;
   height: 100vh;
-  background-color: var(--primary-color);  
+  background-color: var(--primary-color);
   padding-top: 50px;
   text-align: left;
   margin-left: -330px;
@@ -151,32 +157,35 @@ body {
 }
 
 
-.menu-faketrigger:checked ~ ul {
-  margin-left: 0; /* Alterado para 0 para trazer o menu para a posição visível */
+.menu-faketrigger:checked~ul {
+  margin-left: 0;
+  /* Alterado para 0 para trazer o menu para a posição visível */
 }
 
-.menu-faketrigger:not(:checked) ~ ul {
-  margin-left: -330px; /* Mantenha o valor original para esconder o menu */
+.menu-faketrigger:not(:checked)~ul {
+  margin-left: -330px;
+  /* Mantenha o valor original para esconder o menu */
 }
 
-.menu-nav .list li{
+.menu-nav .list li {
   padding: 10px 20px;
 
 }
 
-.menu-nav .list li a{
+.menu-nav .list li a {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 22px;
   font-weight: bold;
   transition: all ease .1s;
 }
-.menu-nav .list li a:hover{
+
+.menu-nav .list li a:hover {
   color: var(--text-color);
   margin: 15px;
 }
 
-.menu-faketrigger:checked ~ ul{
+.menu-faketrigger:checked~ul {
   margin-left: 0px;
 }
 
@@ -220,23 +229,27 @@ body {
   transition: transform 0.3s;
   box-shadow: 0px 4px 6px #000000e6;
 }
+
 .Book:hover {
   transform: translateY(-10px);
 }
+
 .textoexplicativo {
-    text-align: center;
-    color: var(--text-color);
-    padding-bottom: 5%;
-    width: 50%;
-    margin: 0 auto; 
+  text-align: center;
+  color: var(--text-color);
+  padding-bottom: 5%;
+  width: 50%;
+  margin: 0 auto;
 }
-.crieumaconta{
-    text-decoration: none;
-    color: #00d768;
+
+.crieumaconta {
+  text-decoration: none;
+  color: #00d768;
 }
-.crieumaconta:hover{
-    text-decoration:underline;
-    color: var(--shadow-color);
+
+.crieumaconta:hover {
+  text-decoration: underline;
+  color: var(--shadow-color);
 }
 
 
@@ -275,26 +288,26 @@ body {
 }
 
 .slide {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
 
 .slideshow-container {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    color: var(--text-color);
-    height: 280px;
-    overflow: hidden;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--text-color);
+  height: 280px;
+  overflow: hidden;
 }
 
 .ServicosTitulo {
-    color: var(--primary-color);
-    padding-bottom: 3%;
+  color: var(--primary-color);
+  padding-bottom: 3%;
 }
 
 .slideshow-container p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 
@@ -305,24 +318,24 @@ body {
   transition: color 0.3s;
   background-clip: border-box;
 
-  background: linear-gradient(
-    45deg,
-    #06e933,
-    #04d8d8,
-    #03f133,
-    #03eba5,
-    #05e732
-  );
+  background: linear-gradient(45deg,
+      #06e933,
+      #04d8d8,
+      #03f133,
+      #03eba5,
+      #05e732);
   background-size: 400% 100%;
   animation: degrade 10s linear infinite;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @keyframes degrade {
   0% {
     background-position-x: 0%;
   }
+
   100% {
     background-position-x: 400%;
   }
@@ -379,22 +392,25 @@ footer {
   font-size: 14px;
 }
 
-.help{
-    padding-left: 49%;
+.help {
+  padding-left: 49%;
 }
-.linkSuporte{
-    text-decoration: none;
-    color: var(--primary-color);
+
+.linkSuporte {
+  text-decoration: none;
+  color: var(--primary-color);
 }
-.linkSuporte:hover{
-    color: var(--shadow-color);
-    text-decoration: underline;
+
+.linkSuporte:hover {
+  color: var(--shadow-color);
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {
   .mySlides img {
     display: none;
   }
+
   .dindinIcon {
     width: 20%;
     height: auto;
@@ -407,7 +423,7 @@ footer {
     color: var(--text-color);
     height: 410px;
     overflow: hidden;
-}
+  }
 
   footer {
     background-color: var(--footer-color);
@@ -419,13 +435,56 @@ footer {
     display: flex;
     font-size: 14px;
   }
-  .help{
+
+  .help {
     padding-left: 5%;
     width: 100%;
-}
+  }
+
+  .menu-lines {
+    left: 5px;
+    top: 5px;
+    width: 25px;
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+  }
+
+  .menu-faketrigger {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 25px;
+    z-index: 1000;
+    width: 25px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .menu-lines span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: all ease .2s;
+  }
+
+  .menu-faketrigger:checked~.menu-lines span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(.85);
+  }
+
+  .menu-faketrigger:checked~.menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(.85);
+  }
 }
 
-.anuncio{
+.anuncio {
   color: var(--text-color);
   width: 40%;
   margin: 0 auto;
@@ -435,12 +494,13 @@ footer {
   margin-bottom: 5%;
 }
 
-.Link{
+.Link {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
 }
-.Link:hover{
+
+.Link:hover {
   text-decoration: underline;
   color: var(--shadow-color);
 }
