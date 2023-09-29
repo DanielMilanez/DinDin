@@ -104,6 +104,10 @@ body {
   border-radius: 2px;
   transition: all ease .2s;
 }
+.disable-scroll {
+  overflow: hidden;
+}
+
 
 .menu-faketrigger:checked ~ .background-layer{
   opacity: 1;
