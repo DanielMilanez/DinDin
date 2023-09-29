@@ -341,8 +341,13 @@ input:invalid + label + .error {
     width: 20%;
     height: auto;
   }
-}
-@media (max-width:800px){ 
+  .Register {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+  }
   .menu-lines{
     left: 5px; 
     top: 5px; 

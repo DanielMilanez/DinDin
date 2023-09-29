@@ -319,6 +319,21 @@ input:invalid + label + .error {
       width: 20%;
       height: auto;
     }
+
+    .Login{
+      width: 300px;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 0 auto;
+      
+    }
+    .Login h2{
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+    }
+
     .menu-lines{
       left: 5px; 
       top: 5px; 
