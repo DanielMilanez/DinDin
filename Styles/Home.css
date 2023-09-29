@@ -406,6 +406,28 @@ footer {
   text-decoration: underline;
 }
 
+
+.anuncio {
+  color: var(--text-color);
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px #000000e6;
+  margin-bottom: 5%;
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.Link:hover {
+  text-decoration: underline;
+  color: var(--shadow-color);
+}
+
 @media (max-width: 800px) {
   .mySlides img {
     display: none;
@@ -415,14 +437,26 @@ footer {
     width: 20%;
     height: auto;
   }
-
-  .slideshow-container {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
+  .conteudo{
+    display: none;
+  }
+  .anuncio{
     color: var(--text-color);
-    height: 410px;
-    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px #000000e6;
+    margin-bottom: 5%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .itens{
+    padding-bottom: 5%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
   }
 
   footer {
@@ -482,25 +516,4 @@ footer {
     transform-origin: 0% 100%;
     transform: rotate(-45deg) scaleX(.85);
   }
-}
-
-.anuncio {
-  color: var(--text-color);
-  width: 40%;
-  margin: 0 auto;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0px 4px 6px #000000e6;
-  margin-bottom: 5%;
-}
-
-.Link {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-.Link:hover {
-  text-decoration: underline;
-  color: var(--shadow-color);
 }
