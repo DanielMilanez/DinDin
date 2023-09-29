@@ -451,12 +451,14 @@ footer {
     font-size: 12px;
     text-align: center;
   }
-  .itens{
-    padding-bottom: 5%;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    cursor: default;
+  .slideshow-container {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: var(--text-color);
+    height: 280px;
+    overflow: hidden;
+    padding-bottom: 10%;
   }
 
   footer {
