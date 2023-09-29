@@ -77,6 +77,10 @@ body {
   transition: all ease .5s;
 }
 
+.suporte{
+  display: none;
+}
+
 .menu-lines {
   left: 10px;
   top: 10px;
@@ -517,5 +521,14 @@ footer {
   .menu-faketrigger:checked~.menu-lines span:nth-child(3) {
     transform-origin: 0% 100%;
     transform: rotate(-45deg) scaleX(.85);
+  }
+  .help{
+    display: none;
+  }
+  .direirosautorais{
+    margin: 0 auto;
+  }
+  .suporte{
+    display: block;
   }
 }
