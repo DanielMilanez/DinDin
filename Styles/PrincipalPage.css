@@ -102,7 +102,7 @@ body{
 
   .imageDindin{
     display: block;
-    width: 345px;
+    width: 100%;
   }
   .imageNotebook{
     display: none;
