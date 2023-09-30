@@ -20,6 +20,10 @@ body{
     
 }
 
+.imageDindin{
+  display: none;
+}
+
 .img{
   width: 2.2%;
   max-width: 10%; 
@@ -80,3 +84,37 @@ body{
   color: #091027;
 }
 
+@media (max-width: 800px) {
+  body{
+    overflow: hidden;
+  }
+
+  .titulo {
+    width: 90%;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .imageDindin{
+    display: block;
+    width: 345px;
+  }
+  .imageNotebook{
+    display: none;
+  }
+  .background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 12, 14,.9); 
+    backdrop-filter: blur(3px);
+    z-index: 1; 
+  }
+}
