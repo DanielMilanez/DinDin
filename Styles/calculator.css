@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #00d768;
+  /*#0e0c0a */
+  --secondary-color: #090c0e;
+  --footer-color: #020201;
+  --text-color: #fff;
+  --shadow-color: #08961b;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Sora";
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: default;
+    overflow: hidden;
+  }
+
+  .head {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dindinIcon {
+    width: 10%;
+    height: auto;
+  }
